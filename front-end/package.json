@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack & open http://localhost:3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -26,12 +26,8 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^15.14.0",
-<<<<<<< HEAD
-    "postcss": "^8",
     "prettier": "^3.4.2",
-=======
     "postcss": "^8.5.1",
->>>>>>> 3d2437795628ce5d65d959df6802d39fb81125f0
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "typescript-eslint": "^8.22.0"
