@@ -7,8 +7,6 @@ import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
-  someConfig,
-  eslintConfigPrettier,
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     languageOptions: {
@@ -18,4 +16,11 @@ export default [
   pluginJs.configs.recommended,
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    rules: {
+      "prettier/prettier": ["error", { "singleQuote": true, "semi": true }],
+    },
+  },
+  eslintConfigPrettier,
 ];
