@@ -1,14 +1,22 @@
-import LogoDark from './../public/img/logo/logo-dark.svg'
+import LogoDark from './../public/img/logo/logo-dark.svg';
+import Button from './ui/Button';
 
-const Header = () => {
-    return(
-        <header>
-            <img src={LogoDark} alt="logo" />
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About Us</a></li>
-                <li><a href="/">Service</a></li>
-            </ul>
-        </header>
-    )
-}
+const Header: React.FC = () => {
+  return (
+    <header>
+      <img src={LogoDark} alt="logo" />
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/">About Us</a>
+        </li>
+        <li>
+          <a href="/">Service</a>
+        </li>
+      </ul>
+      <Button name="Contact US" />
+    </header>
+  );
+};
