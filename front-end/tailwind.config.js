@@ -8,6 +8,7 @@ module.exports = {
         // Customize Colors
         primary: '#272125',
         secondary: '#7F6C79',
+        tertiary: '#F4F7FF',
         // Customize Colors for dark mode
         dark: {
           background: 'rgb(0, 0, 0)',
