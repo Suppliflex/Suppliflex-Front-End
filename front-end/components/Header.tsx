@@ -2,7 +2,7 @@ import Button from './ui/Button';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-primary flex justify-between pt-9 pb-9 pl-20 pr-20">
+    <header className="bg-black flex justify-between pt-9 pb-9 pl-20 pr-20">
       <div className="flex gap-28">
         <img src="img/logo/logo.svg" alt="logo" />
         <ul className="flex gap-8 items-center">
