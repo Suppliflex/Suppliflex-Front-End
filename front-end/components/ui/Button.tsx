@@ -12,7 +12,7 @@ interface ButtonProps {
     };
   
     const colorClasses = {
-      primary: 'bg-secondary text-white hover:bg-[#96808f]', //hover is subject to change
+      primary: 'bg-pink text-white hover:bg-[#96808f]', //hover is subject to change
       red: '', // Fill in later
       blue: '', // Fill in later
       white: '', // Fill in later
