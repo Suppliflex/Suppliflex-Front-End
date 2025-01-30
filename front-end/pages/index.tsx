@@ -1,5 +1,14 @@
-import '../styles/global.css';
+import '../styles/globals.css';
+import ThemeToggle from '../components/ThemeToggle';
 
 export default function Home() {
-  return <h1 className="text-4xl font-bold text-blue-500">Welcome to Next.js with TypeScript!</h1>;
+  return (
+    <main className="dark:bg-dark-background bg-light-background">
+      <div className="min-h-screen transition-colors duration-300">
+        <ThemeToggle /> {/* We can hide Toggle from here, until light mode is needed */}
+        <h1 className="text-4xl font-bold text-primary dark:text-white">SuppliFlex</h1>
+        <p className="text-secondary">Your supply chain solution</p>
+      </div>
+    </main>
+  );
 }
