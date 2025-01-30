@@ -1,11 +1,10 @@
-import LogoDark from './../public/img/logo/logo-dark.svg';
 import Button from './ui/Button';
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <img src={LogoDark} alt="logo" />
-      <ul>
+    <header className='flex justify-between'>
+      <img src="img/logo/logo.svg" alt="logo" />
+      <ul className='flex gap-6'>
         <li>
           <a href="/">Home</a>
         </li>
@@ -20,3 +19,5 @@ const Header: React.FC = () => {
     </header>
   );
 };
+
+export default Header;
