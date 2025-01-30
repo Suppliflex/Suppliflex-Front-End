@@ -1,11 +1,19 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  // Here Where i Force dark mode by default by adding dark class to the html element
-  if (typeof window !== 'undefined') {
-    document.documentElement.classList.add('dark');
-  }
+  useEffect(() => {
+    // Check localStorage for saved theme
+    const savedTheme = localStorage.getItem('theme');
+    const htmlClass = document.documentElement.classList;
+
+    if (savedTheme === 'light') {
+      htmlClass.remove('dark');
+    } else {
+      htmlClass.add('dark'); // Default to dark mode if no preference
+    }
+  }, []);
 
   return <Component {...pageProps} />;
 }

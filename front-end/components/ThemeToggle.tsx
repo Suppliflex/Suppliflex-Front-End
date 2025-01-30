@@ -4,22 +4,20 @@ const ThemeToggle: React.FC = () => {
   const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
-    // Sync with localStorage if needed later
+    // Read saved theme from localStorage
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) setIsDark(savedTheme === 'dark');
+    setIsDark(savedTheme !== 'light');
   }, []);
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
     document.documentElement.classList.toggle('dark');
-    // localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    localStorage.setItem('theme', newIsDark ? 'dark' : 'light'); // Save to localStorage
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="p-2 rounded-lg bg-dark-background dark:bg-light-background"
-    >
+    <button onClick={toggleTheme} className="p-2 rounded-lg bg-gray-800 dark:bg-gray-200">
       {isDark ? '🌙' : '☀️'}
     </button>
   );
