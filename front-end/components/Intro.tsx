@@ -10,9 +10,13 @@ const Intro: React.FC = () => {
           and improve efficiency.
         </p>
       </div>
-      <div className="">
+      <div>
         <img className="" src="./img/pictures/globe.svg" alt="globe" />
-        {/* <img className="absolute top-0 w-5xl" src="./img/pictures/tire-marks.svg" alt="tire marks" /> */}
+        <img
+          className="absolute top-0 z-[-1]"
+          src="./img/pictures/tire-marks.svg"
+          alt="tire marks"
+        />
       </div>
     </div>
   );

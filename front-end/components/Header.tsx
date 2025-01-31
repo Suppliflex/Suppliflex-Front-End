@@ -2,15 +2,12 @@ import Button from './ui/Button';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-black max-w-7xl mx-auto flex justify-between pt-9 pb-9 pl-20 pr-20">
+    <header className="max-w-7xl mx-auto flex justify-between pt-9 pb-9 pl-20 pr-20">
       <div className="flex gap-28">
         <img src="img/logo/logo.svg" alt="logo" />
         <ul className="flex gap-8 items-center">
           <li>
-            <a
-              className=" font-semibold text-white hover:text-pink transition-colors"
-              href="/"
-            >
+            <a className=" font-semibold text-white hover:text-pink transition-colors" href="/">
               Home
             </a>
           </li>
@@ -23,10 +20,7 @@ const Header: React.FC = () => {
             </a>
           </li>
           <li>
-            <a
-              className="font-semibold text-white hover:text-pink transition-colors"
-              href="/"
-            >
+            <a className="font-semibold text-white hover:text-pink transition-colors" href="/">
               Service
             </a>
           </li>

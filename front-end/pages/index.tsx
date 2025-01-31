@@ -5,7 +5,7 @@ import Intro from './../components/Intro';
 
 export default function Home() {
   return (
-    <main className="bg-black mx-auto text-white">
+    <main className="bg-black mx-auto text-white relative z-0 overflow-hidden">
       <div className="min-h-screen transition-colors duration-300">
         <Header />
         <Intro />
