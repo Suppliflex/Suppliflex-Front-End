@@ -1,8 +1,8 @@
 const Intro: React.FC = () => {
   return (
-    <div className="max-w-7xl m-auto">
-      <div>
-        <h1 >Real-Time Supply Chain Management Software</h1>
+    <div className="max-w-7xl m-auto flex mt-28 justify-between items-center">
+      <div className="flex flex-col gap-12 w-[50%]">
+        <h1 className="text-6xl font-bold">Real-Time Supply Chain Management Software</h1>
         <p>
           Suppliflex provides an innovative platform with the overall goal to digitize and
           streamline your supply chain management operations. Our real-time shipment tracking,
@@ -10,9 +10,9 @@ const Intro: React.FC = () => {
           and improve efficiency.
         </p>
       </div>
-      <div>
-        <img src="./img/pictures/globe.svg" alt="globe" />
-        <img src="./img/pictures/tire-marks.svg" alt="" />
+      <div className="">
+        <img className="" src="./img/pictures/globe.svg" alt="globe" />
+        {/* <img className="absolute top-0 w-5xl" src="./img/pictures/tire-marks.svg" alt="tire marks" /> */}
       </div>
     </div>
   );
