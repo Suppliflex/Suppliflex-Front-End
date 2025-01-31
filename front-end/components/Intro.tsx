@@ -1,6 +1,6 @@
 const Intro: React.FC = () => {
   return (
-    <div className="max-w-7xl m-auto flex mt-28 justify-between items-center">
+    <div className="max-w-7xl m-auto flex mt-28 justify-between items-center pl-5 pr-5">
       <div className="flex flex-col gap-12 w-[50%]">
         <h1 className="text-6xl font-bold">Real-Time Supply Chain Management Software</h1>
         <p className="w-[70%]">
