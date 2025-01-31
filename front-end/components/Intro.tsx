@@ -3,7 +3,7 @@ const Intro: React.FC = () => {
     <div className="max-w-7xl m-auto flex mt-28 justify-between items-center">
       <div className="flex flex-col gap-12 w-[50%]">
         <h1 className="text-6xl font-bold">Real-Time Supply Chain Management Software</h1>
-        <p>
+        <p className="w-[70%]">
           Suppliflex provides an innovative platform with the overall goal to digitize and
           streamline your supply chain management operations. Our real-time shipment tracking,
           warehouse management, and automated billing solutions empower businesses to reduce costs
