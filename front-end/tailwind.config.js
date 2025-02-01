@@ -12,6 +12,7 @@ module.exports = {
         black: '#000000',
         pink: '#7F6C79',
         white: '#FAFAFA',
+        softWhite: '#F4F7FF',
       },
     },
   },
